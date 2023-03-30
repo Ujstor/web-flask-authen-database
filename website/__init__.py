@@ -29,6 +29,14 @@ def create_app():
     login_manager.init_app(app)
 
     @login_manager.user_loader
+    def login_user(id):
+        return User.query.get(int(id))
+
+    login_manager = LoginManager()
+    login_manager.login_view = 'auth.login'
+    login_manager.init_app(app)
+
+    @login_manager.user_loader
     def load_user(id):
         return User.query.get(int(id))
 
@@ -36,6 +44,6 @@ def create_app():
 
 
 def create_database(app):
-    if not path.exists('website/' + DB_NAME): # database is created in outside folder, check if old data are deleted
+    if not path.exists('instance/' + DB_NAME): # database is created in outside folder, check if old data are deleted
         db.create_all(app=app)
         print('Created Database!')
