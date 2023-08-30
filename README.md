@@ -1,6 +1,6 @@
 # Notes - WebApp in Flask
 
-## [Live App link](https://notes-webapp-flask.up.railway.app/)
+## [Live App link](https://notes-flask.astipan.com)
 
 <pre>
 username: test@mail.com
