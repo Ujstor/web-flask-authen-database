@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         GITHUB_USER = 'ujstor'
-        GITHUB_REPO = 'todo-list-app-django'
+        GITHUB_REPO = 'web-flask-authen-database'
         DOCKER_HUB_USERNAME = 'ujstor'
-        DOCKER_REPO_NAME = 'django_todolist'
+        DOCKER_REPO_NAME = 'flask-notes'
         BRANCH = 'master'
         VERSION_PART = 'Patch' // Patch, Minor, Major
         DOCKER_JENKINS_CERDIDENTALS_ID = 'be9636c4-b828-41af-ad0b-46d4182dfb06'

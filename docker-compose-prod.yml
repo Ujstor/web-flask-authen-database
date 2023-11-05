@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  flask:
+    image: ujstor/flask-notes:1.0.0
+    ports:
+      - "5010:5010"
